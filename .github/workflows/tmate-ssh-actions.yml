@@ -21,5 +21,5 @@ jobs:
           echo "RUNNER_DEBUG=$RUNNER_DEBUG" >> "$GITHUB_OUTPUT"
 
       - name: Setup tmate session
-        if: ${{ steps.debug.outputs.RUNNER_DEBUG }} == 1
+        if: steps.debug.outputs.RUNNER_DEBUG == 1
         uses: mxschmitt/action-tmate@v3
