@@ -17,6 +17,7 @@ jobs:
       - name: create debug output
         id: debug
         run: |
+          echo $RUNNER_DEBUG
           echo "RUNNER_DEBUG=$RUNNER_DEBUG" >> "$GITHUB_OUTPUT"
 
       - name: Setup tmate session
