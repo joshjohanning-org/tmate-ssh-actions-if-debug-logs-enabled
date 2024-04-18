@@ -14,5 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: self-actuated/connect-ssh@master
+
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
