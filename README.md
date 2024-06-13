@@ -1,6 +1,6 @@
-# tmate-ssh-actions-if-debug
+# tmate-ssh-actions-if-debug-logs-enabled
 
-An example of doing something conditionally if it is a job with debug logging.
+An example of running a step conditionally if the job has debug logging enabled
 
 The important bit is `$RUNNER_DEBUG` is set to 1 if is a debug job.
 
